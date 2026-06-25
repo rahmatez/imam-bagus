@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Imam Bagus — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== CURSOR GLOW ===== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">IB<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Beranda</a></li>
+        <li><a href="#about" class="nav-link">Tentang</a></li>
+        <li><a href="#skills" class="nav-link">Keahlian</a></li>
+        <li><a href="#projects" class="nav-link">Proyek</a></li>
+        <li><a href="#contact" class="nav-link">Kontak</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting" data-aos="fade-up">Halo, saya</p>
+      <h1 class="hero-name" data-aos="fade-up" data-aos-delay="100">
+        Imam Bagus<span class="accent">.</span>
+      </h1>
+      <div class="hero-roles" data-aos="fade-up" data-aos-delay="200">
+        <span class="role-prefix">Seorang </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-desc" data-aos="fade-up" data-aos-delay="300">
+        Membangun pengalaman digital yang bermakna melalui kode yang bersih,<br />
+        desain yang intuitif, dan solusi yang inovatif.
+      </p>
+      <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+        <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+        <a href="#contact" class="btn btn-outline">Hubungi Saya</a>
+      </div>
+      <div class="hero-socials" data-aos="fade-up" data-aos-delay="500">
+        <a href="#" class="social-link" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Tentang Saya</span>
+        <h2 class="section-title">Kenali Lebih Dekat</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap" data-aos="fade-right">
+          <div class="about-image-frame">
+            <div class="about-image-placeholder">
+              <div class="avatar-initials">IB</div>
+            </div>
+            <div class="about-image-border"></div>
+          </div>
+          <div class="about-badge">
+            <span class="badge-number">3+</span>
+            <span class="badge-text">Tahun Pengalaman</span>
+          </div>
+        </div>
+        <div class="about-content" data-aos="fade-left">
+          <h3 class="about-subtitle">Full-Stack Developer & UI/UX Enthusiast</h3>
+          <p class="about-text">
+            Saya adalah seorang pengembang web yang bersemangat dalam menciptakan solusi digital
+            yang tidak hanya fungsional, tetapi juga estetis dan mudah digunakan. Dengan pengalaman
+            lebih dari 3 tahun, saya telah mengerjakan berbagai proyek mulai dari aplikasi web
+            hingga sistem manajemen konten.
+          </p>
+          <p class="about-text">
+            Saya percaya bahwa kode yang baik adalah kode yang dapat dibaca, dipelihara, dan
+            dapat berkembang seiring waktu. Saya selalu berusaha untuk terus belajar dan mengikuti
+            perkembangan teknologi terbaru.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-target="25">0</span>
+              <span class="stat-label">Proyek Selesai</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="15">0</span>
+              <span class="stat-label">Klien Puas</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="8">0</span>
+              <span class="stat-label">Penghargaan</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Mari Berkolaborasi</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Keahlian</span>
+        <h2 class="section-title">Tech Stack Saya</h2>
+      </div>
+      <div class="skills-grid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Frontend</h3>
+          <div class="skill-items">
+            <div class="skill-item" data-skill="HTML5" data-level="95">
+              <div class="skill-icon html">&#60;/&#62;</div>
+              <span>HTML5</span>
+            </div>
+            <div class="skill-item" data-skill="CSS3" data-level="90">
+              <div class="skill-icon css">&#9670;</div>
+              <span>CSS3</span>
+            </div>
+            <div class="skill-item" data-skill="JavaScript" data-level="88">
+              <div class="skill-icon js">JS</div>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item" data-skill="React" data-level="85">
+              <div class="skill-icon react">&#9883;</div>
+              <span>React</span>
+            </div>
+            <div class="skill-item" data-skill="Vue.js" data-level="78">
+              <div class="skill-icon vue">V</div>
+              <span>Vue.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Backend</h3>
+          <div class="skill-items">
+            <div class="skill-item" data-skill="Node.js" data-level="82">
+              <div class="skill-icon node">N</div>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-item" data-skill="PHP" data-level="80">
+              <div class="skill-icon php">PHP</div>
+              <span>PHP</span>
+            </div>
+            <div class="skill-item" data-skill="Python" data-level="75">
+              <div class="skill-icon python">Py</div>
+              <span>Python</span>
+            </div>
+            <div class="skill-item" data-skill="MySQL" data-level="85">
+              <div class="skill-icon mysql">DB</div>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-item" data-skill="MongoDB" data-level="70">
+              <div class="skill-icon mongo">M</div>
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Tools & Lainnya</h3>
+          <div class="skill-items">
+            <div class="skill-item" data-skill="Git" data-level="90">
+              <div class="skill-icon git">&#9906;</div>
+              <span>Git</span>
+            </div>
+            <div class="skill-item" data-skill="Figma" data-level="80">
+              <div class="skill-icon figma">F</div>
+              <span>Figma</span>
+            </div>
+            <div class="skill-item" data-skill="Docker" data-level="65">
+              <div class="skill-icon docker">&#9635;</div>
+              <span>Docker</span>
+            </div>
+            <div class="skill-item" data-skill="Linux" data-level="75">
+              <div class="skill-icon linux">&#9670;</div>
+              <span>Linux</span>
+            </div>
+            <div class="skill-item" data-skill="AWS" data-level="60">
+              <div class="skill-icon aws">&#9729;</div>
+              <span>AWS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Skill Tooltip -->
+      <div class="skill-tooltip" id="skillTooltip">
+        <span class="tooltip-name"></span>
+        <div class="tooltip-bar">
+          <div class="tooltip-fill"></div>
+        </div>
+        <span class="tooltip-percent"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Portofolio</span>
+        <h2 class="section-title">Proyek Terbaru</h2>
+      </div>
+
+      <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="web">Web App</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-img">
+            <div class="project-img-placeholder gradient-1">
+              <span>E-Commerce</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link">Lihat Demo</a>
+              <a href="#" class="project-link">Source Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <h3 class="project-title">Platform E-Commerce Modern</h3>
+            <p class="project-desc">Aplikasi belanja online lengkap dengan fitur keranjang, pembayaran, dan manajemen produk.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="150">
+          <div class="project-img">
+            <div class="project-img-placeholder gradient-2">
+              <span>Dashboard</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link">Lihat Demo</a>
+              <a href="#" class="project-link">Source Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Vue.js</span>
+              <span class="tag">Laravel</span>
+              <span class="tag">MySQL</span>
+            </div>
+            <h3 class="project-title">Dashboard Analitik Real-time</h3>
+            <p class="project-desc">Dashboard interaktif untuk memantau metrik bisnis dengan visualisasi data yang kaya.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="mobile" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-img">
+            <div class="project-img-placeholder gradient-3">
+              <span>Mobile App</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link">Lihat Demo</a>
+              <a href="#" class="project-link">Source Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">React Native</span>
+              <span class="tag">Firebase</span>
+            </div>
+            <h3 class="project-title">Aplikasi Manajemen Tugas</h3>
+            <p class="project-desc">Aplikasi mobile untuk mengelola tugas harian dengan notifikasi dan sinkronisasi cloud.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="design" data-aos="fade-up" data-aos-delay="250">
+          <div class="project-img">
+            <div class="project-img-placeholder gradient-4">
+              <span>UI Design</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link">Lihat Demo</a>
+              <a href="#" class="project-link">Source Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Figma</span>
+              <span class="tag">UI/UX</span>
+            </div>
+            <h3 class="project-title">Redesign Aplikasi Perbankan</h3>
+            <p class="project-desc">Proyek redesign UI/UX untuk meningkatkan pengalaman pengguna aplikasi perbankan digital.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-img">
+            <div class="project-img-placeholder gradient-5">
+              <span>Blog CMS</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link">Lihat Demo</a>
+              <a href="#" class="project-link">Source Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">Prisma</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <h3 class="project-title">Platform Blog & CMS</h3>
+            <p class="project-desc">Sistem manajemen konten modern dengan editor rich-text dan optimasi SEO otomatis.</p>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="mobile" data-aos="fade-up" data-aos-delay="350">
+          <div class="project-img">
+            <div class="project-img-placeholder gradient-6">
+              <span>Food App</span>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link">Lihat Demo</a>
+              <a href="#" class="project-link">Source Code</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">Node.js</span>
+            </div>
+            <h3 class="project-title">Aplikasi Pesan Makanan</h3>
+            <p class="project-desc">Aplikasi pemesanan makanan dengan fitur pelacakan real-time dan integrasi pembayaran.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Kontak</span>
+        <h2 class="section-title">Mari Berkolaborasi</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right">
+          <p class="contact-intro">
+            Punya proyek menarik? Saya selalu terbuka untuk mendiskusikan peluang baru,
+            ide kreatif, atau sekadar ngobrol tentang teknologi.
+          </p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:imambagus@email.com" class="contact-value">imambagus@email.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.61 4.87 2 2 0 0 1 3.59 2.69h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.09a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 17.5z"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Telepon</span>
+                <a href="tel:+6281234567890" class="contact-value">+62 812-3456-7890</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Lokasi</span>
+                <span class="contact-value">Jakarta, Indonesia</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" data-aos="fade-left">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nama</label>
+              <input type="text" id="name" name="name" placeholder="Nama lengkap Anda" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="email@contoh.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subjek</label>
+            <input type="text" id="subject" name="subject" placeholder="Topik pesan Anda" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ceritakan proyek atau ide Anda..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Kirim Pesan</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess">
+            Pesan berhasil dikirim! Saya akan segera menghubungi Anda.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#home" class="footer-logo">IB<span class="dot">.</span></a>
+        <p class="footer-text">Dibuat dengan <span class="heart">&#10084;</span> oleh Imam Bagus &copy; 2024</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
